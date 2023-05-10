@@ -1,0 +1,15 @@
+{
+  "name": "smsaero/smsaero_api_v2",
+  "description": "Класс для работы с API сервиса smsaero.ru на Yii2",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SmsAero\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
