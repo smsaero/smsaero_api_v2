@@ -319,7 +319,7 @@ class SmsaeroApiV2
      * @param null $priceSms integer - Максимальная стоимость SMS-рассылки. Используется при выборе канала "Viber-каскад" (channel=CASCADE). Если параметр не передан, максимальная стоимость будет рассчитана автоматически
      * @return array
      */
-    public function viber_send($number = null, $groupId = null, $sign, $channel, $text, $imageSource = null, $textButton = null, $linkButton = null, $dateSend = null, $signSms = null, $channelSms = null, $textSms = null, $priceSms = null){
+    public function viber_send($number = null, $groupId = null, $sign = null, $channel = null, $text = null, $imageSource = null, $textButton = null, $linkButton = null, $dateSend = null, $signSms = null, $channelSms = null, $textSms = null, $priceSms = null){
         return json_decode(self::curl_post(self::URL_SMSAERO_API . '/viber/send', [
             is_array($number) && !empty($number) ? 'numbers' : 'number' => $number,
             'groupId' => $groupId,
